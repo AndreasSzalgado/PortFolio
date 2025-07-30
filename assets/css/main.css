@@ -1873,3 +1873,38 @@ p {
 .skills-grid svg:hover {
   transform: scale(1.18);
 }
+
+/* Dark mode support for icons */
+@media (prefers-color-scheme: dark) {
+  .skills-icons svg[fill="#ffffff"],
+  .skills-grid svg[fill="#ffffff"] {
+    fill: #ffffff !important;
+  }
+  
+  .skills-icons svg[fill="#fff"],
+  .skills-grid svg[fill="#fff"] {
+    fill: #ffffff !important;
+  }
+  
+  /* Ensure white text remains visible in dark mode */
+  .skills-grid span[style*="color: #fff"],
+  .skills-grid span[style*="color: #ffffff"] {
+    color: #ffffff !important;
+  }
+}
+
+/* Bootstrap dark theme support */
+[data-bs-theme="dark"] .skills-icons svg[fill="#ffffff"],
+[data-bs-theme="dark"] .skills-grid svg[fill="#ffffff"] {
+  fill: #ffffff !important;
+}
+
+[data-bs-theme="dark"] .skills-icons svg[fill="#fff"],
+[data-bs-theme="dark"] .skills-grid svg[fill="#fff"] {
+  fill: #ffffff !important;
+}
+
+[data-bs-theme="dark"] .skills-grid span[style*="color: #fff"],
+[data-bs-theme="dark"] .skills-grid span[style*="color: #ffffff"] {
+  color: #ffffff !important;
+}
