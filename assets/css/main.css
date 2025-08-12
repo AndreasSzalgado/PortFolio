@@ -1908,3 +1908,11 @@ p {
 [data-bs-theme="dark"] .skills-grid span[style*="color: #ffffff"] {
   color: #ffffff !important;
 }
+
+/* Image Golden Border */
+.fluid-img {
+    filter: drop-shadow(0 0 0 #9b805a) 
+            drop-shadow(0 0 0 #9b805a) 
+            drop-shadow(0 0 0 #9b805a) 
+            drop-shadow(0 0 0 #9b805a);
+}
