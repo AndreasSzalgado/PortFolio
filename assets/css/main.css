@@ -1623,17 +1623,16 @@ p {
 .flip-card-container figcaption {
   display: block;
   position: absolute;
-  left: 16px;
-  bottom: 16px;
-  right: 16px;
-  padding: 10px 20px;
-  background: rgba(156, 128, 90, 0.92);
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0.75em 0;
+  background: #705f45;
   color: #fff;
   font-weight: 700;
   font-size: 1.1rem;
-  border-radius: 12px;
-  /*border: 2px solid var(--accent-color);*/
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  border-radius: 0;
+  box-shadow: none;
   letter-spacing: 1.5px;
   text-align: center;
   z-index: 2;
